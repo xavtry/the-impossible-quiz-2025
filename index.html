@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Impossible Quiz 2025</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.min.js"></script>
+</head>
+<body>
+  <div id="game">
+    <canvas id="particles"></canvas>
+    <div id="header">
+      <div id="lives">❤️ <span id="lifeCount">3</span></div>
+      <div id="questionNumber">Question <span id="qNum">1</span>/110</div>
+      <div id="skips">⭐ <span id="skipCount">7</span></div>
+    </div>
+
+    <div id="bombTimer"></div>
+    <h1 id="question"></h1>
+
+    <div id="options"></div>
+
+    <button id="skipBtn">SKIP (7)</button>
+    <div id="powerups"></div>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <h1>GAME OVER</h1>
+    <p>You made it to question <span id="finalQ"></span></p>
+    <button onclick="location.reload()">TRY AGAIN</button>
+  </div>
+
+  <div id="victory" class="hidden">
+    <h1>YOU BEAT THE IMPOSSIBLE QUIZ!</h1>
+    <p>Only 0.0001% of humans have done this.</p>
+    <button onclick="location.reload()">PLAY AGAIN</button>
+  </div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
